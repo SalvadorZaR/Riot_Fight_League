@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="registro.css">
+    <title>Riot Fight League </title>
+    <link rel="icon" href="RiotLogo.ico">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var registrarButton = document.getElementById('registrarButton');
+
+            registrarButton.addEventListener('click', function (event) {
+                event.preventDefault(); // Evita que el formulario se envíe automáticamente
+                // Aquí puedes agregar más acciones si es necesario
+                document.forms[0].submit(); // Esto enviará el formulario
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <section>
+            <h1>Riot Fight League</h1>
+        </section>
+        
+    </header>
+
+    <section class="intro">
+        <h2>Registro de Peleadores</h1>
+       
+    </section>
+
+    <section class="form register">
+        <form action = "https://script.google.com/macros/s/AKfycbyGdl9b-h0VH3mse8VhOqpUFF6V-0xy8v5tzjnjA0bs811zWg5zW9trYKoCWJ_nkOI/exec" method="post">
+
+            <h3>Información Personal</h3>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre Completo / Legal Name">
+            <input class="controls" type="text" name="peleador" id="peleador" placeholder="SobreNombre del Peleador / Nickname">
+            <input class="controls" type="text" name="telefono" id="telefono" placeholder="Móvil / Mobile">
+            <input class="controls" type="text" name="mail" id="mail" placeholder="Correo Electrónico / Email">
+
+            <h3>Record Amateur</h3>
+            <input class="controls" type="text" name="victorias_amateur" id="victorias_amateur" placeholder="Victorias / Wins:">
+            <input class="controls" type="text" name="derrotas_amateur" id="derrotas_amateur" placeholder="Derrotas / Losses:">
+            <input class="controls" type="text" name="empates_amateur" id="empates_amateur" placeholder="Empates / Draws:">
+            <input class="controls" type="text" name="ko_amateur" id="ko_amateur" placeholder="K.O.:">
+
+            <h3>Record Profesional</h3>
+            <input class="controls" type="text" name="victorias_profesional" id="victorias_profesional" placeholder="Victorias / Wins:">
+            <input class="controls" type="text" name="derrotas_profesional" id="derrotas_profesional" placeholder="Derrotas / Losses:">
+            <input class="controls" type="text" name="empates_profesional" id="empates_profesional" placeholder="Empates / Draws:">
+            <input class="controls" type="text" name="ko_profesional" id="ko_profesional" placeholder="K.O.:">
+
+            <h3>Datos del Peleador</h3>
+            <input class="controls" type="text" name="nacimiento" id="nacimiento" placeholder="Fecha de Nacimiento / Date of Birth">
+            <input class="controls" type="text" name="edad" id="edad" placeholder="Edad / Age*">
+            <input class="controls" type="text" name="academia" id="academia" placeholder="Academia / Affiliation*">
+            <input class="controls" type="text" name="residencia" id="residencia" placeholder="Lugar de Residencia Actual / Current City">
+            <input class="controls" type="text" name="lugarnacimiento" id="lugarnacimiento" placeholder="Lugar de Nacimiento / Place of birth">
+            <input class="controls" type="text" name="division" id="division" placeholder="División / Weight Class*">
+            <input class="controls" type="text" name="altura" id="altura" placeholder="Altura / Height(cm)*">
+            <input class="controls" type="text" name="alcance" id="alcance" placeholder="Alcance / Reach (cm)*">
+
+
+            <h3>Datos del Manager</h3>
+            <input class="controls" type="text" name="manager" id="manager" placeholder="Nombre de Manager / Manager's Name">
+            <input class="controls" type="text" name="managertel" id="managertel" placeholder="Móvil de Manager / Manager's Phone Number">
+            <input class="controls" type="text" name="mangeremail" id="mangeremail" placeholder="Correo Electrónico de Manager / Manager's Email">
+
+        
+            <input class="buttons" type="button" value="Registrar / Register" id ="registrarButton">
+        </form>
+    </section>
+</body>
+</html>
